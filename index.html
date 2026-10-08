@@ -5,41 +5,467 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Madiha Darugara</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      var theme = null;
+      try { theme = localStorage.getItem("theme"); } catch (e) {}
+      if (!theme) {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
 </head>
 <body>
 
-  <header class="site-header">
-  <div class="nav-container">
-    <a href="#about" class="site-name">Madiha Darugara</a>
-
-    <nav class="main-nav" aria-label="Main navigation">
+  <header class="navbar">
+    <a class="brand" href="#about">Madiha Darugara</a>
+    <nav class="nav-links">
       <a href="#about">About</a>
-      <a href="#publications">Publications</a>
+      <a href="#education">Education</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#cv">CV</a>
     </nav>
-  </div>
-</header>
+    <div class="nav-right">
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">&#127769;</button>
+    </div>
+  </header>
 
   <main>
+
     <section id="about">
-      <h2>Junior ML Engineer</h2>
-      <p class="tagline">AI/ML Ã‚Â· Human-AI Interaction Ã‚Â· Responsible AI</p>
-      <p>
-        I am a Junior ML Engineer working on AI-powered document intelligence
-        and verification systems. My interests include Human-AI Interaction,
-        HCI, AI agents, and responsible AI systems.
-      </p>
-      <p class="links">
-        <a href="#cv">CV</a> Ã‚Â·
-        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> Ã‚Â·
-        <a href="https://github.com/madihadarugara" target="_blank">GitHub</a> Ã‚Â·
-        <a href="mailto:your-email@example.com">Email</a>
-      </p>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="label">About Me</p>
+          <h1>Hi, I&rsquo;m Madiha Darugara.</h1>
+          <p>
+            I&rsquo;m a <strong>Junior ML Engineer</strong> working on AI and machine
+            learning systems for practical, real-world applications. My experience
+            includes developing applied AI solutions across machine learning, NLP,
+            document intelligence, and software-based AI systems.
+          </p>
+          <p>
+            I&rsquo;m interested in exploring how intelligent systems can be designed,
+            developed, and applied to solve meaningful problems. I enjoy working across
+            both <strong>AI engineering and emerging research directions</strong>, from
+            building practical systems to understanding how AI can be made more
+            effective, reliable, and useful.
+          </p>
+          <p>
+            My academic and professional interests continue to evolve as I explore
+            different areas of AI through projects, industry experience, and
+            independent learning.
+         
+<div class="social-icons">
+
+  <!-- LinkedIn -->
+  <a
+    class="social-icon"
+    href="https://www.linkedin.com/in/madiha-darugara-33b67036a"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.34 18H5.67v-8h2.67ZM7 8.99a1.55 1.55 0 1 1 0-3.1 1.55 1.55 0 0 1 0 3.1ZM18.34 18h-2.67v-4.12c0-.98-.02-2.26-1.38-2.26-1.38 0-1.59 1.08-1.59 2.19V18h-2.67v-8h2.56v1.09h.04a2.8 2.8 0 0 1 2.52-1.22c2.69 0 3.19 1.77 3.19 4.07Z"/>
+    </svg>
+  </a>
+
+  <!-- Email -->
+  <a
+    class="social-icon"
+    href="mailto:madihadarugar22@gmail.com"
+    aria-label="Email Madiha Darugara"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="m4 7 8 6 8-6"/>
+    </svg>
+  </a>
+
+  
+<!-- CV -->
+<a
+  class="social-icon"
+  href="./Vitae.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Open CV"
+>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M7 3h7l5 5v13H7z"/>
+    <path d="M14 3v5h5M10 13h6M10 17h6"/>
+  </svg>
+</a>
+
+</div>
+        </div>
+        <div class="about-photo">
+          <img src="assets/profile.jpg" alt="Madiha Darugara">
+          <p class="caption">Junior ML Engineer</p>
+        </div>
+      </div>
     </section>
+
+    <section id="education">
+  <p class="label">Education</p>
+
+  <div class="education-item">
+    <div class="education-left">
+      <h2>G M Institute of Technology</h2>
+      <h3>B.E. in Artificial Intelligence and Machine Learning</h3>
+      <p class="education-date">2022 – 2025</p>
+    </div>
+
+    <div class="education-right">
+      <p>
+        CGPA: <strong>8.53 / 10</strong>, First Class with Distinction.
+        Completed academic coursework and projects across machine learning,
+        artificial intelligence, natural language processing, and applied AI.
+        Developed practical experience through technical projects involving
+        machine learning models, intelligent applications, and AI-based
+        problem solving.
+      </p>
+    </div>
+  </div>
+
+  <div class="education-item">
+    <div class="education-left">
+      <h2>Jain Polytechnic</h2>
+      <h3>Diploma in Computer Science Engineering</h3>
+      <p class="education-date">2019 – 2022</p>
+    </div>
+
+    <div class="education-right">
+      <p>
+        Percentage: <strong>82.3%</strong>. Built a strong foundation in
+        computer science, programming, software development, databases, and
+        core computing concepts through coursework and technical projects.
+      </p>
+    </div>
+  </div>
+
+      </div>
+</section>
+
+    <section id="experience">
+  <p class="label">Experience</p>
+
+  <div class="experience-item">
+    <div class="experience-left">
+      <h2>HeavenDocs</h2>
+      <h3>Junior ML Engineer</h3>
+      <p class="experience-date">Nov 2025 – Present</p>
+    </div>
+
+    <div class="experience-right">
+      <p>
+        Working on AI and machine learning systems for property document
+        intelligence and verification. Developing practical AI workflows
+        involving document extraction, cross-document verification,
+        inconsistency detection, and intelligent document analysis using
+        machine learning, NLP, and document intelligence technologies.
+      </p>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <div class="experience-left">
+      <h2>Sookshmas Technologies</h2>
+      <h3>Java Full Stack Intern</h3>
+      <p class="experience-date">Feb 2025 – May 2025</p>
+    </div>
+
+    <div class="experience-right">
+      <p>
+        Worked on Java-based full-stack development and gained practical
+        experience in application development, backend programming,
+        database integration, and software development workflows.
+      </p>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <div class="experience-left">
+      <h2>Karunadu Technologies</h2>
+      <h3>AI/ML Intern</h3>
+      <p class="experience-date">Nov 2023 – Dec 2023</p>
+    </div>
+
+    <div class="experience-right">
+      <p>
+        Gained practical experience in artificial intelligence and
+        machine learning through technical tasks involving machine
+        learning concepts, model development, and applied problem
+        solving.
+      </p>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <div class="experience-left">
+      <h2>Sirintel</h2>
+      <h3>Embedded Systems Intern</h3>
+      <p class="experience-date">Apr 2022 – Jun 2022</p>
+    </div>
+
+    <div class="experience-right">
+      <p>
+        Gained hands-on experience with embedded systems and
+        hardware-oriented software development, building a foundation
+        in programming and embedded technology.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <section id="research">
+      <p class="label">Research Interests</p>
+      <ul class="plain-list">
+        <li>Artificial Intelligence</li>
+        <li>Machine Learning</li>
+        <li>Human-AI Interaction</li>
+        <li>HCI</li>
+        <li>AI Agents</li>
+        <li>Natural Language Processing</li>
+        <li>Responsible AI</li>
+        <li>AI Systems</li>
+        <li>Document Intelligence</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+  <p class="label">Projects</p>
+
+  <div class="project-item">
+  <div class="project-left">
+    <h2>Proplox</h2>
+    <h3>AI-Powered Property Document Verification &amp; Legal Opinion Platform</h3>
+    <p class="project-date">Nov 2025 – Present</p>
+  </div>
+
+  <div class="project-right">
+    <p>
+      An AI-powered platform for property document verification and legal
+      document analysis. The system extracts information from property
+      documents, identifies inconsistencies across documents, and supports
+      cross-verification using external legal and property data sources.
+      The platform is currently being extended with RAG-based retrieval
+      and AI agent workflows for intelligent document analysis and
+      verification.
+    </p>
+
+    <p class="project-tech">
+      <strong>Technologies:</strong>
+      Python · FastAPI · Machine Learning · NLP / Legal NLP · RAG ·
+      AI Agents · Google Document AI · PostgreSQL · pgvector ·
+      Landeed · Surepass · eCourts · RERA
+    </p>
+  </div>
+</div>
+
+  <div class="project-item">
+  <div class="project-left">
+    <h2>ZivaCares</h2>
+    <h3>End-to-End Healthcare Appointment &amp; Hospital Assistance Platform</h3>
+    <p class="project-date">2026 – Present</p>
+  </div>
+
+  <div class="project-right">
+    <p>
+      An end-to-end healthcare platform currently being developed for
+      the local healthcare ecosystem in Davangere, Karnataka. The platform
+      is designed to connect patients, hospitals, care assistance, and
+      transport services through a unified digital healthcare workflow.
+    </p>
+
+    <p>
+      The platform supports hospital discovery, appointment booking,
+      appointment passes, live queue tracking, hospital management,
+      care assistance, transport and caretaker coordination, driver
+      assignment, and payment workflows. A backend system and
+      AI-powered patient assistance chatbot are also being developed
+      as part of the platform.
+    </p>
+
+    <p class="project-tech">
+      <strong>Technologies:</strong>
+      Next.js · React · JavaScript · Python · FastAPI · PostgreSQL ·
+      REST APIs · AI · NLP · Machine Learning
+    </p>
+
+    <p class="project-tech">
+      <strong>Key Features:</strong>
+      Hospital Management · Appointment Booking · Live Queue Tracking ·
+      Care Assistance · Transport Coordination · Caretaker Management ·
+      Driver Assignment · Payment Workflow · AI Patient Assistance
+    </p>
+  </div>
+</div>
+
+  <div class="project-item">
+  <div class="project-left">
+    <h2>Automated Notes Maker</h2>
+    <h3>Multilingual Speech-to-Text &amp; AI Notes Generation</h3>
+    <p class="project-date">2025</p>
+  </div>
+
+  <div class="project-right">
+    <p>
+      A Python-based desktop application that transforms spoken and recorded
+      audio into structured, actionable notes. The system supports real-time
+      and batch speech transcription, multilingual translation, automatic
+      summarization, and extraction of key insights from spoken content.
+    </p>
+
+    <p>
+      The application also provides audio editing, text-to-speech feedback,
+      customizable transcription options, annotation, and export of
+      generated content in formats such as PDF, DOCX, and TXT. It was
+      designed to help students, professionals, and researchers capture
+      and organize information more efficiently across multiple languages.
+    </p>
+
+    <p class="project-tech">
+      <strong>Technologies:</strong>
+      Python · SpeechRecognition · NLTK · Googletrans · Pydub · Pyttsx3 ·
+      Speech-to-Text · NLP · Text-to-Speech · Audio Processing
+    </p>
+  </div>
+</div>
+
+  <div class="project-item">
+  <div class="project-left">
+    <h2>Pandas vs. Penguins</h2>
+    <h3>CNN Image Classification</h3>
+    <p class="project-date">2024</p>
+  </div>
+
+  <div class="project-right">
+    <p>
+      A deep learning-based image classification project focused on
+      distinguishing between pandas and penguins from images. The project
+      involved image dataset preparation, preprocessing, image resizing and
+      transformation, followed by the development and training of a
+      Convolutional Neural Network (CNN) for automated image classification.
+    </p>
+
+    <p>
+      OpenCV was used for image processing and preparation, while TensorFlow
+      and Keras were used to build and train the CNN model. The trained model
+      was evaluated on image data and achieved over 90% classification
+      accuracy, demonstrating effective performance in distinguishing the
+      two animal classes.
+    </p>
+
+    <p class="project-tech">
+      <strong>Technologies:</strong>
+      Python · TensorFlow · Keras · OpenCV · NumPy · Pandas · CNN ·
+      Deep Learning · Image Processing · Image Classification
+    </p>
+  </div>
+</div>
+
+  <div class="project-item">
+  <div class="project-left">
+    <h2>Crime Prediction and Analysis</h2>
+    <h3>Machine Learning-Based Crime Prediction</h3>
+    <p class="project-date">2022</p>
+  </div>
+
+  <div class="project-right">
+    <p>
+      A machine learning project focused on analysing crime patterns and
+      predicting crime categories using historical crime data from Chicago.
+      The project involved data preprocessing, feature selection, data
+      transformation, and analysis of crime-related attributes such as
+      crime type, location, date, and time.
+    </p>
+
+    <p>
+      Machine learning classification techniques were explored to identify
+      patterns in the dataset and predict crime categories. The project also
+      included analysis and visualization of crime trends across different
+      time periods and locations, providing insights into patterns within
+      historical crime data.
+    </p>
+
+    <p class="project-tech">
+      <strong>Technologies:</strong>
+      Python · Machine Learning · KNN · Decision Tree ·
+      Gradient Boosting · Pandas · NumPy · Scikit-learn ·
+      Data Preprocessing · Data Visualization
+    </p>
+  </div>
+</div>
+
+<!-- A Little Else About Me -->
+<section id="more-about">
+  <p class="label">A Little Else About Me</p>
+
+  <div class="more-about-content">
+    <p>
+      Travelling is one of my favourite ways to experience the world beyond
+      my everyday routine. I enjoy discovering unfamiliar places, experiencing
+      different cultures, and noticing the little details that make each
+      journey memorable.
+    </p>
+
+    <p>
+      When I am not exploring somewhere new, I enjoy dancing and writing.
+      Dancing gives me a way to express myself freely, while writing allows
+      me to turn thoughts and emotions into stories. I have written a book
+      titled <em>Almost Always Ours: Lefty Glances</em>, which has been a
+      meaningful part of my creative journey.
+    </p>
+
+    <p>
+      For me, travelling, dancing, and writing are ways to discover new
+      perspectives, express myself, and collect experiences that stay with
+      me long after the moment has passed.
+    </p>
+  </div>
+</section>
+
+
+<section id="gallery">
+  <p class="label">Gallery</p>
+
+  <p>Here is a photo of my book.</p>
+
+  <figure class="gallery-photo">
+    <img
+      src="./images/Book.jpeg"
+      alt="Almost Always Ours: Lefty Glances"
+      loading="lazy"
+    />
+
+    <figcaption>
+      Madiha Darugara — <em>Almost Always Ours: Lefty Glances</em>
+    </figcaption>
+  </figure>
+</section>
+
+
+
   </main>
+
+  <script>
+    var btn = document.getElementById("theme-toggle");
+    var MOON = "\uD83C\uDF19";
+    var SUN = "\u2600\uFE0F";
+    function setIcon() {
+      var t = document.documentElement.getAttribute("data-theme");
+      btn.textContent = (t === "dark") ? SUN : MOON;
+    }
+    setIcon();
+    btn.addEventListener("click", function () {
+      var t = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", t);
+      try { localStorage.setItem("theme", t); } catch (e) {}
+      setIcon();
+    });
+  </script>
 
 </body>
 </html>
